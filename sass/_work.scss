@@ -1,0 +1,48 @@
+#someWork {
+
+    h4 {
+        margin-top: 68px;
+    }
+
+    p.under-header {
+        margin-top: 39px;
+    }
+
+    div.work-gallery {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        margin-top: 99px;
+
+        div.work-gallery-box {
+            
+            img {
+                margin-bottom: -4px;
+            }
+
+        }
+    }
+
+    div.quote {
+        height: auto;
+        margin-top: 99px;
+        padding: 0px 110px;
+
+        .quote-text {
+            padding-left: 28px;
+            padding-top: 33px;
+        }
+
+        span.line {
+            transform: none;
+            margin-top: 29px;
+            margin-left: 3px;
+            width: 60px;
+        }
+
+        p.quote-autor {
+            padding-top: 10px;
+            padding-left: 7px;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+div.blog-summary {
+    display: flex;
+    width: 100%;
+    margin-top: 55px;
+    padding: 0 30px;
+
+    .blog-summary-box1 {
+        width: 66%;
+
+        h2.blog-summary-h2 {
+            font-size: 45px;
+            margin-top: 8px;
+            margin-bottom: 0px;
+            color: $light-text;
+        }
+
+        p.blog-summary-text {
+            color: $light-text;  
+            font-size: 14px;
+            margin-top: 26px;
+            line-height: 24px;
+            padding-right: 11px;
+        }
+
+        .blog-summary-followers {
+            margin-top: 44px;
+            font-weight: bold;
+        }
+
+        .blog-summary-followus {
+            display: flex;
+            flex-direction: row;
+
+            .blog-summary-followus-text {
+                font-size: 14px;
+                font-style: italic;
+                margin-top: 16px;
+                color: $light-text;
+                margin-right: 14px;
+            }
+
+            .blog-follow-icon {
+                padding: 16px 4px;
+                margin: 0 4px;
+            }
+        }
+
+        button.blog-subscribe {
+            background-color: $filler;
+            color: $home-letters;
+            text-transform: uppercase;
+            width: 150px;
+            height: 38px;
+            margin-top: 22px;
+            margin-left: 45%;
+            box-shadow: none;
+            border: none;
+            font-weight: bold;
+        }
+    }
+
+    .blog-summary-box2 {
+        width: 54%;
+
+        .blog-summary-topic {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 19px;
+            margin-left: -3px;
+        }
+
+        .blog-summary-gallerybox {
+            display: flex;
+            margin-top: 36px;
+            margin-bottom: -10px;
+
+            img.blog-summary-img {
+                height: 80px;
+            }
+
+            .blog-summary-box-text {
+                margin-left: 18px;
+
+                .blog-summary-tiltle {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin-top: 18px;
+                    line-height: 17px;
+                    color: $dark-text;
+                    margin-bottom: -4px;
+                }
+
+                .blog-summary-date {
+                    color: $light-text;
+                    font-size: 11px;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    .blog-summary-box3 {
+        width: 35%;
+
+        .instagram-summary {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 36px;
+        }
+
+        .instagram-gallery {
+            margin-bottom: 12px;
+
+            .instagram-gallery-img {
+                margin: -1px;
+            }
+        }
+
+        .instagram-more {
+            font-style: italic;
+            font-size: 11px;
+            color: $dark-text;
+        }
+    }
+}

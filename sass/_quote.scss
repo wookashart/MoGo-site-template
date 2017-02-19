@@ -1,0 +1,57 @@
+div.quote {
+    display: flex;
+    width: 100%;
+    padding-left: 141px;
+    font-size: 25px;
+    margin-top: 190px;
+    font-style: italic;
+    height: 148px;
+
+    div.img-conteiner {
+        border: 2px solid;
+        border-color: $filler;
+        padding: 41px;
+
+    }
+
+    .quote-text {
+        padding-left: 58px;
+        padding-top: 1px;
+        display: flex;
+        line-height: 36px;
+        text-align: left;
+        color: $light-text;
+        width: 85%;
+        flex-direction: column;
+
+        .quote-text-top{
+            font-size: 24px;
+            width: 100%;
+
+        }
+
+        .quote-text-bottom {
+            display: flex;
+            padding-left: 1px;
+            
+            span.line {
+                height: 3px;
+                width: 68px;
+                background: $line;
+                margin-left: 3px;
+                margin-top: 31px;
+                display: block;
+            }
+
+            p.quote-autor {
+                font-family: 'Kaushan Script', cursive;
+                margin-top: 0;
+                text-align: left;
+                font-size: 24px;
+                padding-left: 8px;
+                color: black;
+                padding-top: 18px;
+            }
+        }    
+    }
+}

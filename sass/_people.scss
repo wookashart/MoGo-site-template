@@ -1,0 +1,70 @@
+#peopleSay {
+    background-image: url('../img/background_people.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 727px;
+
+    h4 {
+        margin-top: 233px;
+    }
+
+    div.people-conteiner {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 18px;
+        padding: 0 71px;
+
+        .people-box {
+            width: 50%;
+            display: flex;
+            margin-bottom: -19px;
+
+            &:nth-of-type(2) {
+                padding-left: 40px;
+            }
+            
+            &:nth-of-type(4) {
+                padding-left: 40px;
+            }
+
+            img {
+                margin: auto;
+            }
+
+            .people-box-text {
+                padding-top: 60px;
+                padding-left: 29px;
+
+                .people-conteiner-name {
+                    text-transform: uppercase;
+                    padding-top: 3px;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                .people-conteiner-func {
+                    margin-top: -4px;
+                    font-style: italic;
+                    font-size: 12px;
+                }
+
+                span.line {
+                    margin-left: 0;
+                    transform: none;
+                    width: 62px;
+                    margin-top: 19px;
+                }
+
+                .people-conteiner-comment {
+                    font-size: 15px;
+                    padding-top: 5px;
+                    padding-right: 20px;
+                    line-height: 24px;
+                    color: $light-text;
+                }
+            }
+        }
+    }
+}

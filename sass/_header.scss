@@ -1,0 +1,40 @@
+h4 {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+
+    margin-bottom: 0;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+span.line {
+    display: block;
+    height: 3px;
+    width: 58px;
+    background-color: $line;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 34px;
+}
+
+p.under-header {
+    text-align: center;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 77px;
+    word-spacing: 0px;
+    padding: 0px 150px;
+    line-height: 25px;
+    color: $light-text;
+    font-family: 'Roboto', sans-serif;
+}

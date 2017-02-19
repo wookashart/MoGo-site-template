@@ -1,0 +1,63 @@
+#meetOurTeam {
+
+    h4 {
+        margin-top: 166px;
+    }
+
+    p {
+        margin-top: 40px;
+    }
+
+    div.team-gallery {
+        display: flex;
+        padding: 63px 7px;
+        width: 100%;
+
+        .team-gallery-box {
+            width: 33.3%;
+            padding: 0 15px;
+
+            img {
+                -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                margin-bottom: 17px;
+            }
+
+            .team-gallery-name {
+                margin-bottom: 0;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 13px;
+                color: #333333;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                padding: 0;
+                margin-top: 16px;
+            }
+
+            .team-gallery-func {
+                font-family: 'Roboto', sans-serif;
+                font-style: italic;
+                margin-top: 7px;
+                text-align: center;
+                font-size: 14px;
+                line-height: 24px;
+                color: $light-text;
+            }
+        }
+    }
+
+    div.team-logo {
+        padding: 59px 0;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+
+        img {
+            width: 16.6%;
+            margin: auto;
+            padding: 40px;
+        }
+    }
+}
