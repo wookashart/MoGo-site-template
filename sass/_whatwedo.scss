@@ -32,6 +32,7 @@
                 border-color: $accordion-border;
                 background-color: white;
                 font-weight: bold;
+                margin-bottom: -25px;
 
                 &:hover {
                     background: $accordion-border;
@@ -47,6 +48,13 @@
                 overflow: hidden;
                 height: 1px;
                 transition-duration: 300ms;
+                font-size: 15px;
+                line-height: 24px;
+                padding-top: 18px;
+                width: 576px;
+                font-style: italic;
+                color: $light-text;
+                margin-bottom: 13px;
 
                 p {
                     width: 100%;
@@ -59,7 +67,7 @@
             }
 
             .down {
-                padding-bottom: 159px;
+                padding-bottom: 160px;
             }            
         }        
     }

@@ -232,7 +232,8 @@ a {
       border: 1px solid;
       border-color: #e5e5e5;
       background-color: white;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: -25px; }
       #whatWeDo div.weDo-box div.weDo-accordion button.accordion-button:hover {
         background: #e5e5e5; }
       #whatWeDo div.weDo-box div.weDo-accordion button.accordion-button img {
@@ -241,7 +242,14 @@ a {
     #whatWeDo div.weDo-box div.weDo-accordion div.accordion-panel {
       overflow: hidden;
       height: 1px;
-      transition-duration: 300ms; }
+      transition-duration: 300ms;
+      font-size: 15px;
+      line-height: 24px;
+      padding-top: 18px;
+      width: 576px;
+      font-style: italic;
+      color: #999999;
+      margin-bottom: 13px; }
       #whatWeDo div.weDo-box div.weDo-accordion div.accordion-panel p {
         width: 100%;
         text-align: left;
@@ -250,7 +258,7 @@ a {
         border: 1px solid;
         border-color: #e5e5e5; }
     #whatWeDo div.weDo-box div.weDo-accordion .down {
-      padding-bottom: 159px; }
+      padding-bottom: 160px; }
 
 #whatWeDo .quote-text-bottom {
   padding-left: 31px; }
