@@ -7,39 +7,9 @@
     background-position: center;
     background-size: cover;
 
-    div.logo {
-        font-size: 30px;
-        font-weight: bold;
-        padding: 12px 20px;
-    }
-
-    nav {
-        text-transform: uppercase;
-        color: $home-letters;
-        display: flex;
-        justify-content: flex-end;
-        font-size: 13px;
-        margin-right: 20px;
-        margin-top: -35px;
-
-        a {
-            padding-left: 42px;
-            color: $home-letters;
-        }
-
-        a.menu-button {
-            padding-right: 12px;
-            letter-spacing: 1px;
-
-            &:hover {
-                color: $menu-hover;
-            }
-        }
-    }
-
     h2 {
         text-align: center;
-        margin-top: 154px;
+        margin-top: 201px;
         font-size: 72px;
         font-family: 'Kaushan Script', cursive;
         margin-bottom: 0;
