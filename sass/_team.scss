@@ -12,18 +12,79 @@
         display: flex;
         padding: 63px 7px;
         width: 100%;
+        flex-direction: column;
+
+        @media screen and (min-width: 767px) {
+            flex-direction: row;
+        }
 
         .team-gallery-box {
-            width: 33.3%;
-            padding: 0 15px;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
 
-            img {
-                -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
-                -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
-                box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
-                margin-bottom: 17px;
+            .team-gallery-pic1, .team-gallery-pic2, .team-gallery-pic3 {
+                text-align: center;
+                background-repeat: no-repeat;
+                margin-top: 2px;
+                height: 470px;
+                padding-top: 104px;
+                margin-left: 50%;
+                transform: translateX(-50%);
+
+                @media screen and (min-width: 767px) {
+                    width: 100%;
+                    margin-left: 23px;
+                    transform: none;
+                }
             }
 
+            .team-gallery-pic1 {
+                background-image: url('../img/pic5.jpg'); 
+            }
+
+            .team-gallery-pic2 {
+                background-image: url('../img/pic6.jpg'); 
+            }   
+            
+            .team-gallery-pic3 {
+                background-image: url('../img/pic7.jpg');
+                
+                @media screen and (min-width: 767px) {
+                        margin-right: 23px;
+                }
+            }
+
+            .team-gallery-img {
+                margin-top: -104px;
+                height: 470px;
+                padding-top: 104px;
+                width: 100%;
+
+                @media screen and (min-width: 767px) {
+                    width: 92%;
+                }
+
+                .hover-items {
+                    opacity: 0;
+                }
+
+                &:hover {
+                    z-index: 5;
+                    -webkit-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                    -moz-box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                    box-shadow: 10px 10px 0px 0px rgba(149,225,211,1);
+                    background: -moz-linear-gradient(top, rgba(243,129,129,1) 0%, rgba(252,227,138,0.9) 100%), url('../img/pic1.jpg');
+                    background: -webkit-linear-gradient(top, rgba(243,129,129,1) 0%,rgba(252,227,138,0.9) 100%);
+                    background: linear-gradient(to bottom, rgba(243,129,129,1) 0%,rgba(252,227,138,0.9) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38181', endColorstr='#e6fce38a',GradientType=0 );
+                }
+                
+                &:hover .hover-items {
+                    opacity: 1;
+                }
+            }
+            
             .team-gallery-name {
                 margin-bottom: 0;
                 text-transform: uppercase;
@@ -32,8 +93,7 @@
                 color: #333333;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: bold;
-                padding: 0;
-                margin-top: 16px;
+                margin-top: 32px;
             }
 
             .team-gallery-func {

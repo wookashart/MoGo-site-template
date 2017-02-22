@@ -17,5 +17,10 @@
         margin: auto;
         padding-top: 45px;
         padding-left: 103px;
+        width: 100%;
+
+        @media screen and (min-width: 767px) {
+            width: auto;
+        }
     }
 }

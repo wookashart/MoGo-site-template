@@ -1,11 +1,18 @@
 div.quote {
     display: flex;
     width: 100%;
-    padding-left: 141px;
     font-size: 25px;
-    margin-top: 190px;
     font-style: italic;
     height: 148px;
+    padding-left: 0px;
+    margin-bottom: 274px;
+    margin-top: 0px;
+
+    @media screen and (min-width: 767px) {
+        padding-left: 141px;
+        margin-top: 190px;
+        margin-bottom: 0;
+    }
 
     div.img-conteiner {
         border: 2px solid;
@@ -25,8 +32,12 @@ div.quote {
         flex-direction: column;
 
         .quote-text-top{
-            font-size: 24px;
+            font-size: 14px;
             width: 100%;
+
+            @media screen and (min-width: 767px) {
+                font-size: 24px;
+            }
 
         }
 
@@ -47,10 +58,14 @@ div.quote {
                 font-family: 'Kaushan Script', cursive;
                 margin-top: 0;
                 text-align: left;
-                font-size: 24px;
+                font-size: 14px;
                 padding-left: 8px;
                 color: black;
                 padding-top: 18px;
+
+                @media screen and (min-width: 767px) {
+                    font-size: 24px;
+                }
             }
         }    
     }
