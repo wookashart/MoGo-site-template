@@ -32,7 +32,7 @@ $('#menu-blog').on('click', function(){
 });
 
 $('#menu-contact').on('click', function(){
-    $("html, body").animate({ scrollTop: $('#maybe-contact').offset().top - 190}, 1000);
+    $("html, body").animate({ scrollTop: $('footer').offset().top}, 1000);
     $('nav.nav').removeClass('down');
     $('#hamburger').removeClass('open');
 });

@@ -3,7 +3,10 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 727px;
+
+    @media screen and (min-width: 767px) {
+        height: 727px;
+    }
 
     h4 {
         margin-top: 233px;
@@ -12,14 +15,24 @@
     div.people-conteiner {
         display: flex;
         width: 100%;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        flex-direction: column;
         margin-top: 18px;
         padding: 0 71px;
 
+        @media screen and (min-width: 767px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
         .people-box {
-            width: 50%;
+            width: 100%;
             display: flex;
             margin-bottom: -19px;
+
+            @media screen and (min-width: 767px) {
+                width: 50%;
+            }
 
             &:nth-of-type(2) {
                 padding-left: 40px;

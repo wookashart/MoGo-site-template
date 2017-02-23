@@ -10,9 +10,18 @@
         padding-left:  30px;
         flex: 1;
         margin-top: 37px;
+        flex-direction: column;
+
+        @media screen and (min-width: 767px) {
+            flex-direction: row;
+        }
 
         .blog-box {
-            width: 33.3%;
+            width: 100%;
+
+            @media screen and (min-width: 767px) {
+                width: 33.3%
+            }
 
             .blog-photo {
                 height: 240px;
@@ -21,15 +30,24 @@
                 align-items: flex-end;
                 margin: 10px 1px;
                 padding-bottom: 10px;
+                background-position-x: center;
+
+                @media screen and (min-width: 767px) {
+                    background-position-x: left;
+                }
 
                 .blog-photo-bcg {
                     background-color: $filler;
                     width: 60px;
                     height: 70px;
                     position: relative;
-                    left: -10px;
+                    left: 60px;
                     text-align: center;
                     color: $home-letters;
+
+                    @media screen and (min-width: 767px) {
+                        left: -10px;
+                    }
                 }
             }
 
@@ -84,6 +102,10 @@
         height: 200px;
         padding-top: 57px;
         cursor: pointer;
+
+        @media screen and (max-width: 767px){
+            display: none;
+        }
 
         p.openmap-text {
             text-transform: uppercase;

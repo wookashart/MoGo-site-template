@@ -113,11 +113,20 @@
         display: flex;
         width: 100%;
         flex-direction: row;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 767px) {
+            flex-wrap: nowrap;
+        }
 
         img {
-            width: 16.6%;
+            width: 50%;
             margin: auto;
             padding: 40px;
+
+            @media screen and (min-width: 767px) {
+                width: 16.6%;
+            }
         }
     }
 }

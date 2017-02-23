@@ -475,11 +475,18 @@ div.navigation {
   padding: 59px 0;
   display: flex;
   width: 100%;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 767px) {
+    #meetOurTeam div.team-logo {
+      flex-wrap: nowrap; } }
   #meetOurTeam div.team-logo img {
-    width: 16.6%;
+    width: 50%;
     margin: auto;
     padding: 40px; }
+    @media screen and (min-width: 767px) {
+      #meetOurTeam div.team-logo img {
+        width: 16.6%; } }
 
 #someWork h4 {
   margin-top: 68px; }
@@ -492,13 +499,62 @@ div.navigation {
   overflow: hidden;
   justify-content: center;
   margin-top: 99px; }
-  #someWork div.work-gallery div.work-gallery-box img {
-    margin-bottom: -4px; }
+  #someWork div.work-gallery div.work-gallery-box {
+    display: none; }
+    #someWork div.work-gallery div.work-gallery-box:nth-of-type(2) {
+      display: block; }
+    @media screen and (min-width: 767px) {
+      #someWork div.work-gallery div.work-gallery-box {
+        display: block; } }
+    #someWork div.work-gallery div.work-gallery-box img {
+      margin-bottom: -4px; }
+    #someWork div.work-gallery div.work-gallery-box .gallery-gradient {
+      position: absolute;
+      width: 480px;
+      height: 390px;
+      display: block;
+      text-align: center;
+      padding-top: 161px;
+      background: -moz-linear-gradient(top, #f38181 0%, rgba(252, 227, 138, 0.9) 100%), url("../img/pic1.jpg");
+      background: -webkit-linear-gradient(top, #f38181 0%, rgba(252, 227, 138, 0.9) 100%);
+      background: linear-gradient(to bottom, #f38181 0%, rgba(252, 227, 138, 0.9) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38181', endColorstr='#e6fce38a',GradientType=0 );
+      opacity: 0;
+      margin-top: -390px; }
+      #someWork div.work-gallery div.work-gallery-box .gallery-gradient:hover {
+        opacity: 1; }
+      #someWork div.work-gallery div.work-gallery-box .gallery-gradient .gradient-icon {
+        background-image: url("../img/picture.png");
+        height: 30px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background-repeat: no-repeat;
+        width: 30px; }
+      #someWork div.work-gallery div.work-gallery-box .gallery-gradient .gradient-text1 {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 14px;
+        margin-top: 18px;
+        margin-bottom: -4px; }
+      #someWork div.work-gallery div.work-gallery-box .gallery-gradient .gradient-text2 {
+        color: #ffffff;
+        font-size: 14px;
+        font-style: italic; }
+    #someWork div.work-gallery div.work-gallery-box .gallery-gradient-2xheight {
+      margin-top: -780px;
+      height: 780px;
+      padding-top: 350px; }
 
 #someWork div.quote {
   height: auto;
   margin-top: 99px;
-  padding: 0px 110px; }
+  padding: 0px 20px; }
+  #someWork div.quote img {
+    width: 22%;
+    height: 22%; }
+  @media screen and (min-width: 767px) {
+    #someWork div.quote {
+      padding: 0px 110px; } }
   #someWork div.quote .quote-text {
     padding-left: 28px;
     padding-top: 33px; }
@@ -570,20 +626,30 @@ div.quote {
   background-image: url("../img/background_people.jpg");
   background-position: center;
   background-size: cover;
-  width: 100%;
-  height: 727px; }
+  width: 100%; }
+  @media screen and (min-width: 767px) {
+    #peopleSay {
+      height: 727px; } }
   #peopleSay h4 {
     margin-top: 233px; }
   #peopleSay div.people-conteiner {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     margin-top: 18px;
     padding: 0 71px; }
+    @media screen and (min-width: 767px) {
+      #peopleSay div.people-conteiner {
+        flex-wrap: wrap;
+        flex-direction: row; } }
     #peopleSay div.people-conteiner .people-box {
-      width: 50%;
+      width: 100%;
       display: flex;
       margin-bottom: -19px; }
+      @media screen and (min-width: 767px) {
+        #peopleSay div.people-conteiner .people-box {
+          width: 50%; } }
       #peopleSay div.people-conteiner .people-box:nth-of-type(2) {
         padding-left: 40px; }
       #peopleSay div.people-conteiner .people-box:nth-of-type(4) {
@@ -661,24 +727,38 @@ p.under-header {
   width: 100%;
   padding-left: 30px;
   flex: 1;
-  margin-top: 37px; }
+  margin-top: 37px;
+  flex-direction: column; }
+  @media screen and (min-width: 767px) {
+    #blog div.blog-conteiner {
+      flex-direction: row; } }
   #blog div.blog-conteiner .blog-box {
-    width: 33.3%; }
+    width: 100%; }
+    @media screen and (min-width: 767px) {
+      #blog div.blog-conteiner .blog-box {
+        width: 33.3%; } }
     #blog div.blog-conteiner .blog-box .blog-photo {
       height: 240px;
       background-repeat: no-repeat;
       display: flex;
       align-items: flex-end;
       margin: 10px 1px;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      background-position-x: center; }
+      @media screen and (min-width: 767px) {
+        #blog div.blog-conteiner .blog-box .blog-photo {
+          background-position-x: left; } }
       #blog div.blog-conteiner .blog-box .blog-photo .blog-photo-bcg {
         background-color: #95e1d3;
         width: 60px;
         height: 70px;
         position: relative;
-        left: -10px;
+        left: 60px;
         text-align: center;
         color: #ffffff; }
+        @media screen and (min-width: 767px) {
+          #blog div.blog-conteiner .blog-box .blog-photo .blog-photo-bcg {
+            left: -10px; } }
     #blog div.blog-conteiner .blog-box .blog-photo-1 {
       background-image: url("../img/pic15.jpg"); }
     #blog div.blog-conteiner .blog-box .blog-photo-2 {
@@ -715,6 +795,9 @@ p.under-header {
   height: 200px;
   padding-top: 57px;
   cursor: pointer; }
+  @media screen and (max-width: 767px) {
+    #blog div.openmap {
+      display: none; } }
   #blog div.openmap p.openmap-text {
     text-transform: uppercase;
     font-weight: bold;
@@ -724,10 +807,13 @@ p.under-header {
     color: #f38181; }
 
 div.blog-summary {
-  display: flex;
+  display: none;
   width: 100%;
   margin-top: 55px;
   padding: 0 30px; }
+  @media screen and (min-width: 767px) {
+    div.blog-summary {
+      display: flex; } }
   div.blog-summary .blog-summary-box1 {
     width: 66%; }
     div.blog-summary .blog-summary-box1 h2.blog-summary-h2 {
