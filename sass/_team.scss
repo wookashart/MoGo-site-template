@@ -13,6 +13,7 @@
         padding: 63px 7px;
         width: 100%;
         flex-direction: column;
+        align-items: center;
 
         @media screen and (min-width: 767px) {
             flex-direction: row;
@@ -20,8 +21,12 @@
 
         .team-gallery-box {
             display: flex;
-            width: 100%;
+            width: 84%;
             flex-direction: column;
+
+            @media screen and (min-width: 767px){
+                width: 33.3%;
+            }
 
             .team-gallery-pic1, .team-gallery-pic2, .team-gallery-pic3 {
                 text-align: center;
@@ -31,9 +36,11 @@
                 padding-top: 104px;
                 margin-left: 50%;
                 transform: translateX(-50%);
+                position: relative;
+                width: 380px;
 
                 @media screen and (min-width: 767px) {
-                    width: 100%;
+                    width: 84%;
                     margin-left: 23px;
                     transform: none;
                 }
@@ -56,14 +63,14 @@
             }
 
             .team-gallery-img {
-                margin-top: -104px;
-                height: 470px;
-                padding-top: 104px;
-                width: 100%;
-
-                @media screen and (min-width: 767px) {
-                    width: 92%;
-                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
 
                 .hover-items {
                     opacity: 0;
@@ -122,7 +129,15 @@
         img {
             width: 50%;
             margin: auto;
-            padding: 40px;
+            padding: 15px;
+
+            @media screen and (min-width: 400px){
+                padding: 40px;
+            }
+
+            @media screen and (min-width: 600px){
+                padding: 60px;
+            }
 
             @media screen and (min-width: 767px) {
                 width: 16.6%;
